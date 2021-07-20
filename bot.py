@@ -4,7 +4,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart 
 from email.mime.application import MIMEApplication
 import zipfile
-print("please wait this take minutes")
+print("please wait this take few minutes")
 def zipdir(path, ziph):
 	for root, dirs, files in os.walk(path):
 		for file in files:
